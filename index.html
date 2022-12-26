@@ -77,18 +77,18 @@
               </h2>
               <div class="form-main">
                 <div class="modal-field">
-                  <label>Ім'я</label>
-                  <input type="text" name="username" />
+                  <label for="username">Ім'я</label>
+                  <input type="text" name="username" id="username" />
                 </div>
                 <div class="modal-field">
-                  <label>Телефон</label>
-                  <input type="tel" name="phone_number" />
+                  <label for="phone_number">Телефон</label>
+                  <input type="tel" name="phone_number" id="phone_number" />
                 </div>
                 <div class="modal-field">
-                  <label>Пошта</label>
-                  <input type="email" name="email" />
+                  <label for="email">Пошта</label>
+                  <input type="email" name="email" id="email" />
                 </div>
-                <div class="modal-field">
+                <div class="textarea-field">
                   <label for="comment"> Коментар</label>
                   <textarea
                     name="comment"
@@ -98,18 +98,18 @@
                   ></textarea>
                 </div>
               </div>
-
-              <input
-                type="checkbox"
-                name="agreement"
-                value="agreement"
-                id="agreement"
-              />
-              <label for="agreement"
-                >Погоджуюся з розсилкою та приймаю Умови договору</label
-              >
-
-              <button type="submit">Відправити</button>
+              <div class="modal-agreevent">
+                <input
+                  type="checkbox"
+                  name="agreement"
+                  value="agreement"
+                  id="agreement"
+                />
+                <label for="agreement"
+                  >Погоджуюся з розсилкою та приймаю Умови договору</label
+                >
+              </div>
+              <button type="submit" class="modal-btn">Відправити</button>
             </form>
           </div>
         </div>

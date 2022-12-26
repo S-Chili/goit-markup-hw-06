@@ -232,12 +232,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-decision {
+    height: 581px;
+}
+
 .modal-title {
-    margin-top: 2px;
-    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 23px;
+    margin: 40px auto 12px auto;
     font-weight: 700;
-    font-size: 20px;
     line-height: 1,15;
+    font-size: 20px;
     text-align: center;
     color: #212121;
 }
@@ -274,21 +281,23 @@
 }
 
 .form-main {
-    padding-right: 40px;
-    padding-left: 40px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+
 }
 
 .modal-field {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-bottom: 10px;
     height: 58px;
+    margin-bottom: 10px;
 }
 
 .modal-field input {
     width: 448px;
-    height: 48px;
+    height: 40px;
 }
 
 .modal-field label {
@@ -296,10 +305,56 @@
     height: 18px;
 }
 
-textarea {
+.textarea-field {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.textarea-field textarea {
     width: 448px;
     height: 120px;
     resize: none;
+}
+
+.textarea-field label {
+    height: 18px;
+    margin-bottom: 4px;
+} 
+
+.modal-agreevent {
+    display: flex;
+    text-align: center;
+    width: 423px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 52px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: var(--white-color);
+    min-width: 20px;
+    height: 50px;
+    background-color: var(--accent-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em; 
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #188CE8;
 }
 
 /* features */
@@ -894,6 +949,7 @@ textarea {
     flex-direction: row;
     text-align: left;
     width: 570px;
+    align-items: center;
 }
 
 .footer-field input {
