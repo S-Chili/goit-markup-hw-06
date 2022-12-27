@@ -285,6 +285,7 @@
 .decision-btn:hover .decision-cross,
 .decision-btn:focus .decision-cross {
   fill: var(--accent-color);
+  outline: none;
 }
 
 .form-main {
