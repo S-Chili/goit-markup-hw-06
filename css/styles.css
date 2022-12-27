@@ -338,11 +338,13 @@
 .modal-field input:hover ~ .modal-icon,
 .modal-field input:focus ~ .modal-icon {
   fill: rgba(33, 150, 243, 1);
+  outline: none;
 }
 
 .modal-field input:hover,
 .modal-field input:focus {
   border: 1px solid rgba(33, 150, 243, 1);
+  outline: none;
 }
 
 .textarea-field {
@@ -368,6 +370,7 @@
 .textarea-field textarea:hover,
 .textarea-field textarea:focus {
   border: 1px solid rgba(33, 150, 243, 1);
+  outline: none;
 }
 
 textarea::placeholder {
